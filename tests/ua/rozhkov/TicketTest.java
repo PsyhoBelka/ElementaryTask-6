@@ -93,10 +93,16 @@ public class TicketTest {
 
 	@org.testng.annotations.Test
 	public void testCountSimpleOnRange() throws Exception {
+		int expected=2;
+		int actual=ticket.countSimpleOnRange(100001,100010);
+		assertEquals(expected,actual);
 	}
 
 	@org.testng.annotations.Test
 	public void testCountHeavyOnRange() throws Exception {
+		int expected=1;
+		int actual=ticket.countHeavyOnRange(100001,100010);
+		assertEquals(expected,actual);
 	}
 
 }
