@@ -20,7 +20,6 @@ public class Ticket {
 				digits[j - 1] = Integer.parseInt(String.valueOf(number).substring(i, i + 1));
 				j--;
 			}
-
 			if ((digits[0] + digits[1] + digits[2]) == (digits[3] + digits[4] + digits[5])) {
 				return true;
 			} else return false;
